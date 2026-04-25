@@ -1,0 +1,320 @@
+/*Paleta de mi marca: Título:#a97d80; fondo:#ffebeb, links,p,h2,h3:#000   */
+
+body {
+    padding-top: 80px; /* Espacio para el navbar fijo */
+    background-color: #f8d8d8;
+}
+
+/*NAVBAR SECTION*/
+.navbar {
+    background-color: #F7F5F2;
+    height: 80px;
+    margin: 0;
+    width: 100%; 
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+.navbar .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar .navbar-brand img {
+    height: 80px;
+    width: auto;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-left {
+    margin-right: auto;
+}
+
+.nav-right {
+    margin-left: auto;
+}
+
+.nav-link {
+    color: #000000;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #c48f93;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: "DM Serif Display", serif;
+    color: #000
+}
+
+h2{
+    margin-top: 30px;
+}
+
+h1, h2, h3 {
+  font-family: "DM Serif Display", serif;
+  color: #000;
+  font-size: 25px;
+}
+
+a {
+    color: #000000;
+    font-size: 18px;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+p{
+    margin-bottom: 15px
+}
+
+p, ul, ol {
+    color: #000000;
+    font-family: "Playfair Display", serif;
+}
+
+/*HERO SECTION*/
+
+.hero-section {
+    background-color: #f8d8d8;
+    padding: 2rem 0; /* Reducido de 5rem a 2rem */
+}
+
+.hero-title {
+    font-family: "DM Serif Display", serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    text-align: left;
+}
+
+.hero-subtitle {
+    font-family: "DM Serif Display", serif;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.hero-text{
+    font-family: "Playfair Display", serif;
+    font-size:1.2rem ;
+    text-align: left;
+}
+
+.hero-imagen {
+    padding: 0;
+    width: 50%;
+    min-width: 420px;
+    max-width: 550px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 0; /* Sin padding extra */
+}
+
+@media (max-width: 767.98px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .hero-imagen {
+        margin: 2rem auto 0;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #F7F5F2;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+footer h5 {
+    font-family: "DM Serif Display", serif;
+    color: #1E1E1E;
+    margin-bottom: 15px;
+    padding-left:0 ;
+    margin-left: 0;
+}
+
+
+
+footer p {
+    font-family: "Playfair Display", serif;
+    color: #1E1E1E;
+    font-size: 14px;
+}
+
+footer a {
+    color: #1E1E1E;
+    font-family: "Playfair Display", serif;
+    
+}
+
+footer a:hover {
+    color: #C65C6A;
+}
+
+
+
+/* Iconos de redes sociales */
+.social-icons li a {
+    color: #C65C6A !important;
+    font-size: 24px;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons li a:hover {
+    opacity: 0.7;
+}
+
+
+
+.linea-footer {
+    border: none; /* elimina estilo default */
+    height: 1px;
+    width: 60%;
+    margin: 0 auto;
+    background: linear-gradient(to right, transparent, #C65C6A, transparent);
+}
+
+
+/*Servicios section*/
+.gradient-hero {
+      background-image: url("img/fondoSecun.gif");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 5rem 0;
+      color: #fff;
+    }
+
+    .gradient-hero h1 {
+        font-family:"DM Serif Display", serif;
+        font-size: 3rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px #000(0, 0, 0, 0.3);
+    }
+
+/*Sobre Mi SECTION*/
+
+.section-about{
+    background-image: url("img/fondoSecun.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5rem 0;
+    color: #fff;
+
+}
+.about-title {
+        font-family:"DM Serif Display", serif;
+        font-size: 3.5rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        color: #000;
+        text-align: center;
+    }
+
+.about-text{
+    font-family:"Playfair Display", serif;
+    color: #1E1E1E;
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-size: 1.25rem;
+}
+
+.section-about .row {
+    align-items: center !important;
+}
+
+.about-imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-imagen .hero-imagen {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+   
+}
+
+/*TRABAJOS SECTION*/
+
+.trabajos-carousel {
+    padding: 80px 0;
+    
+}
+
+.card.mb-3 {
+    font-family:"Playfair Display", serif; ;
+    font-size: 1.2rem;
+    color: #963541;
+    background: #F7F5F2;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(150, 53, 65, 0.08);
+    margin: 2rem auto;
+    max-width: 700px;
+}
+.card.mb-3 .card-title {
+    font-family: "DM Serif Display", serif;
+    font-size: 1.5rem;
+    color:#963541; 
+    font-weight:bold;
+}
+
+.card.mb-3 .card-description{
+    color:#963541; 
+    font-size:1.2rem;
+}
+
+.card .row {
+  align-items: center;
+}
+
+.card .img-fluid {
+  object-fit: cover;
+  width: 90%;
+  height: 220px;
+  border-radius: 12px 0 0 12px;
+}
+
+@media (max-width: 767.98px) {
+  .card .img-fluid {
+    height: 180px;
+    border-radius: 12px 12px 0 0;
+  }
+  .card.mb-3 {
+    max-width: 95vw;
+  }
+}
