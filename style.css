@@ -7,49 +7,37 @@ body {
 
 /*NAVBAR SECTION*/
 .navbar {
-    background-color: #F7F5F2;
-    height: 80px;
-    margin: 0;
-    width: 100%; 
-    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 40px;
+    height: 80px;
     position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
+    background: #F7F5F2;
     z-index: 1000;
-
 }
 
 .navbar .navbar-brand {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .navbar .navbar-brand img {
     height: 80px;
     width: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-.nav-left, .nav-right {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
 
-.nav-left {
-    margin-right: auto;
-}
-
-.nav-right {
-    margin-left: auto;
-}
 
 .nav-link {
-    color: #000000;
+    font-family:"DM Serif Display", serif; ;
+    color: #963541;
     font-size: 18px;
     text-decoration: none;
     padding: 8px 15px;
@@ -95,8 +83,8 @@ p, ul, ol {
 /*HERO SECTION*/
 
 .hero-section {
-    background-color: #f8d8d8;
-    padding: 2rem 0; /* Reducido de 5rem a 2rem */
+    background-image: url("img/home.gif");
+    padding: 2rem 0;
 }
 
 .hero-title {
@@ -104,20 +92,20 @@ p, ul, ol {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 0.8rem;
-    text-align: left;
+    text-align: center;
 }
 
 .hero-subtitle {
     font-family: "DM Serif Display", serif;
     font-size: 1.6rem;
     margin-bottom: 2rem;
-    text-align: left;
+    text-align: center;
 }
 
 .hero-text{
     font-family: "Playfair Display", serif;
     font-size:1.2rem ;
-    text-align: left;
+    text-align:center;
 }
 
 .hero-imagen {
@@ -130,24 +118,10 @@ p, ul, ol {
     align-items: center;
     justify-content: flex-end;
     padding-right: 0; /* Sin padding extra */
+    border-radius: 9px;
 }
 
-@media (max-width: 767.98px) {
-    .hero-title {
-        font-size: 2.5rem;
-    }
 
-    .hero-subtitle {
-        font-size: 1rem;
-    }
-    .hero-text {
-        font-size: 1rem;
-    }
-
-    .hero-imagen {
-        margin: 2rem auto 0;
-    }
-}
 
 /* Footer */
 footer {
@@ -158,7 +132,7 @@ footer {
 
 footer h5 {
     font-family: "DM Serif Display", serif;
-    color: #1E1E1E;
+    color: #963541;
     margin-bottom: 15px;
     padding-left:0 ;
     margin-left: 0;
@@ -166,10 +140,11 @@ footer h5 {
 
 
 
-footer p {
+.footer-brand p {
     font-family: "Playfair Display", serif;
     color: #1E1E1E;
     font-size: 14px;
+    text-align: left;
 }
 
 footer a {
@@ -186,7 +161,7 @@ footer a:hover {
 
 /* Iconos de redes sociales */
 .social-icons li a {
-    color: #C65C6A !important;
+    color: #1E1E1E !important;
     font-size: 24px;
     transition: opacity 0.3s ease;
 }
@@ -208,7 +183,7 @@ footer a:hover {
 
 /*Servicios section*/
 .gradient-hero {
-      background-image: url("img/fondoSecun.gif");
+      background-image: url("img/home.gif");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -220,13 +195,73 @@ footer a:hover {
         font-family:"DM Serif Display", serif;
         font-size: 3rem;
         font-weight: bold;
+        
         text-shadow: 2px 2px 4px #000(0, 0, 0, 0.3);
     }
+ 
+/*CARDS SERVICIOS*/    
+.servicios-section {
+    background-color: #E8CDCC;
+    padding: 80px 0;
+    
+}
 
+.servicios-barra{
+    background: #f6d2d1;
+    width: 80%;
+    margin: 30px auto;
+    padding: 8px 0;
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+    color: #1E1E1E;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.servicio-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.servicio-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background-color:#f6d2d1;
+    padding-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(150, 53, 65, 0.08);
+    border: none;
+    border-radius: 12px;
+}
+
+.servicio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 8px rgba(150, 53, 65, 0.08);
+}
+
+.servicio-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.servicio-card .card-title {
+    font-family: "DM Serif Display", serif;
+    color: #1e1e1e;
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+
+.servicio-card .card-text {
+    font-family: "Playfair Display", serif;
+    color: #1E1E1E;
+    font-size: 0.95rem;
+}
 /*Sobre Mi SECTION*/
 
 .section-about{
-    background-image: url("img/fondoSecun.gif");
+    background-image: url("img/home.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -259,12 +294,16 @@ footer a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .about-imagen .hero-imagen {
     width: 100%;
     max-width: 450px;
     height: auto;
+    box-shadow: 0 2px 8px rgba(150, 53, 65, 0.08);
+    border: none;
+    border-radius: 12px;
    
 }
 
@@ -309,12 +348,391 @@ footer a:hover {
   border-radius: 12px 0 0 12px;
 }
 
+
+/* Contacto SECTION */
+.contacto-hero {
+    background-image: url("img/contacto.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    
+}
+
+.contact-card {
+    background-color: #F7F5F2;
+    padding: 40px 35px;
+    border-radius: 25px;
+    max-width: 420px;
+    width: 100%;
+}
+
+.contact-title {
+    font-family: "DM Serif Display", serif;
+    color: #963541;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Playfair Display", serif;
+    color: #C65C6A;
+    text-decoration: none;
+    border-bottom: 1px solid #C65C6A;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    
+}
+
+.contact-item i {
+    color: #C65C6A;
+    font-size: 1.3rem;
+    transition: opacity 0.3s ease;
+}
+
+.contact-item:hover {
+    
+    opacity: 0.7;
+}
+
+
+.faq-section {
+    background-color: #f8d8d8;
+    padding: 90px 0;
+}
+
+.faq-intro {
+    text-align: center;
+    padding-left: 20px;
+}
+
+.faq-label {
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #963541;
+    background-color: #f7f6f2;
+    padding: 4px 8px;
+}
+
+.faq-intro h2 {
+    font-family: "DM Serif Display", serif;
+    color: #C65C6A;
+    font-size: 2.2rem;
+    margin: 15px 0;
+}
+
+.faq-intro p {
+    font-family: "Playfair Display", serif;
+    color: #1E1E1E;
+    max-width: 320px;
+    margin: 0 auto 25px;
+}
+
+.faq-btn {
+    background-color: #C65C6A;
+    color: #F7F5F2;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+}
+
+.faq-btn:hover {
+    background-color: #963541;
+    color: #F7F5F2;
+}
+
+.accordion-item {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #d7a7aa;
+}
+
+.accordion-button {
+    background-color: transparent;
+    font-family:  "DM Serif Display", serif;
+    color: #1E1E1E;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: #963541;
+    box-shadow: none;
+}
+
+.accordion-body {
+    font-family: "Playfair Display", serif;
+    color: #1E1E1E;
+    font-size: 0.95rem;
+}
+
+
+
+/*SERVICIOS DETALLES */
+/* BLOQUE 1 */
+.detalle-servicio-texto p {
+    font-family: "Playfair Display", serif;
+    color: #1E1E1E;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    max-width: 520px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+/* IMAGEN */
+.detalle-servicio-img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.detalle-servicio-texto{
+    background-color: #e8cdcc;
+    min-height: 320px;
+    padding: 60px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detalle-servicio-info {
+    background-color: #e8cdcc;
+    padding: 60px 0;
+    
+}
+
+.detalle-servicio-info .row{
+    min-height: 300px;
+    
+}
+
+.detalle-servicio-info .col-md-6{
+    display: flex;
+    align-items: center;
+}
+
+
+/* BLOQUE 2 */
+.detalle-servicio-incluye {
+    background-color: #e8cdcc;
+    padding: 60px 0;
+}
+
+.detalle-servicio-incluye .row {
+    min-height: 320px;
+}
+
+.detalle-servicio-incluye .col-md-6 {
+    padding: 0;
+}
+
+.detalle-servicio-incluye .detalle-servicio-img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+}
+
+.incluye-box {
+    background-color: #e8cdcc;
+    height: 320px;
+    padding: 50px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.incluye-box h2 {
+    font-family: "DM Serif Display", serif;
+    color: #963541;
+    text-align: center;
+    margin: 0 0 25px 0;
+    font-size: 1.8rem;
+}
+
+.incluye-box ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 auto;
+    font-family: "Playfair Display", serif;
+    color: #1E1E1E;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    max-width: 450px;
+}
+
+.incluye-box li {
+    margin-bottom: 6px;
+}
+
+/* RESPONSIVE GENERAL */
+
+/* Tablets */
+@media (max-width: 991.98px) {
+    .navbar {
+        padding: 0 15px;
+    }
+
+    .nav-link {
+        font-size: 15px;
+        padding: 6px 8px;
+    }
+
+    .hero-imagen {
+        min-width: auto;
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .servicio-card {
+        margin-bottom: 20px;
+    }
+
+    .contacto-hero {
+        justify-content: center;
+        padding: 60px 20px;
+    }
+
+    .contact-card {
+        max-width: 380px;
+    }
+}
+
+/* Celulares */
 @media (max-width: 767.98px) {
-  .card .img-fluid {
-    height: 180px;
-    border-radius: 12px 12px 0 0;
-  }
-  .card.mb-3 {
-    max-width: 95vw;
-  }
+    body {
+        padding-top: 120px;
+    }
+
+    .navbar {
+        height: 120px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .navbar .navbar-brand {
+        position: static;
+        transform: none;
+        order: -1;
+        margin: 0 auto;
+    }
+
+    .navbar .navbar-brand img {
+        height: 50px;
+    }
+
+
+    .nav-link {
+        font-size: 14px;
+        padding: 4px 6px;
+    }
+
+    .gradient-hero {
+        padding: 3rem 0;
+    }
+
+    .gradient-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .servicios-section {
+        padding: 50px 20px;
+    }
+
+    .servicios-barra {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .trabajos-carousel {
+        padding: 50px 15px;
+    }
+
+    .card.mb-3 {
+        max-width: 100%;
+    }
+
+    .card .img-fluid {
+        width: 100%;
+        height: 220px;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .contacto-hero {
+        min-height: auto;
+        padding: 80px 20px;
+        justify-content: center;
+    }
+
+    .contact-card {
+        max-width: 100%;
+        padding: 30px 25px;
+    }
+
+    .faq-section {
+        padding: 60px 20px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-brand p {
+        text-align: center;
+    }
+
+    .linea-footer {
+        width: 90%;
+    }
+
+    /* Detalle de servicios */
+    .detalle-servicio-info,
+    .detalle-servicio-incluye {
+        padding: 40px 0;
+    }
+
+    .detalle-servicio-img {
+        height: 300px;
+    }
+
+    .detalle-servicio-texto,
+    .incluye-box {
+        height: auto;
+        min-height: auto;
+        padding: 40px 25px;
+    }
+
+    .detalle-servicio-texto p,
+    .incluye-box ul {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .incluye-box h2 {
+        font-size: 1.5rem;
+    }
 }
