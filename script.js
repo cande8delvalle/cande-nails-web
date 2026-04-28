@@ -3,7 +3,7 @@ fetch("navbar.html")
   .then(data => {
     document.getElementById("navbar").innerHTML = data;
     
-    // Toggle menú hamburguesa
+    //  menú hamburguesa
     const hamburger = document.getElementById('hamburger-menu');
     const navbarMenu = document.getElementById('navbar-menu');
     const navMobile = document.getElementById('nav-mobile');
@@ -14,7 +14,7 @@ fetch("navbar.html")
         navbarMenu.classList.toggle('active');
       });
 
-      // Cerrar menú al hacer click en un link
+      // cierra el menu alk hacer click en un link
       if (navMobile) {
         const mobileLinks = navMobile.querySelectorAll('a');
         mobileLinks.forEach(link => {
