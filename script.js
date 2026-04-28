@@ -2,6 +2,29 @@ fetch("navbar.html")
   .then(res => res.text())
   .then(data => {
     document.getElementById("navbar").innerHTML = data;
+    
+    // Toggle menú hamburguesa
+    const hamburger = document.getElementById('hamburger-menu');
+    const navbarMenu = document.getElementById('navbar-menu');
+    const navMobile = document.getElementById('nav-mobile');
+    
+    if (hamburger && navbarMenu) {
+      hamburger.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navbarMenu.classList.toggle('active');
+      });
+
+      // Cerrar menú al hacer click en un link
+      if (navMobile) {
+        const mobileLinks = navMobile.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            navbarMenu.classList.remove('active');
+          });
+        });
+      }
+    }
   });
 
 fetch("footer.html")
