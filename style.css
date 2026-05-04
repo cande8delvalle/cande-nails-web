@@ -443,6 +443,14 @@ footer a:hover {
   border-radius: 12px 0 0 12px;
 }
 
+.carousel-control-prev{
+    width: 10%;
+    
+}
+.carousel-control-next{
+    width: 10%;
+   
+}
 
 /* Contacto SECTION */
 .contacto-hero {
